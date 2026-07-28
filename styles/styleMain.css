@@ -288,11 +288,3 @@ button {
         text-align: center;
     }
 }
-
-.Video video,
-.DamagedToyGameplay video {
-    display: block;
-    margin: 40px auto;
-    width: min(900px, 95%);
-    height: auto;
-}
