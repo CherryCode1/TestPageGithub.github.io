@@ -288,3 +288,13 @@ button {
         text-align: center;
     }
 }
+.videoEmbed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoEmbed iframe {
+    width: 900px;
+    height: 506px;
+}
