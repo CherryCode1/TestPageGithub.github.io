@@ -1,0 +1,222 @@
+@font-face {
+    font-family: "RokkittSemiBold-SemiBold";
+    src: url("../src/fonts/RokkittSemiBold-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Peace Sans";
+    src: url("../src/fonts/Peace Sans.otf");
+}
+
+.topbar nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #000000;
+    background-size: cover;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 4px solid rgb(126, 126, 126);
+}
+
+
+.topbar nav > * {
+    position: relative;
+    z-index: 1;
+}
+
+.topbar a{
+    color: white;
+    text-decoration: none;
+    font-family: "RokkittSemiBold-SemiBold";
+    font-size: 25px;
+    transition: 0.2s;
+}
+
+.topbar{
+    height: 100px;
+    width: 100%;
+}
+
+.WoodyImage img {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+}
+.subTitle h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+    font-family: "RokkittSemiBold-SemiBold";
+    text-decoration-thickness: inherit;
+    font-size: 50px;
+}
+
+.subTitle h3{
+    text-align: left;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+    font-family: "RokkittSemiBold-SemiBold";
+    text-decoration-thickness: inherit;
+}
+
+.subTitle2 h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+    font-family: "RokkittSemiBold-SemiBold";
+    text-decoration-thickness: inherit;
+    font-size: 50px;
+}
+
+.subTitle2 h3{
+    text-align: left;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+    font-family: "RokkittSemiBold-SemiBold";
+    text-decoration-thickness: inherit;
+}
+nav a:hover {
+    color: orange;
+}
+
+body {
+    margin: 0;
+
+    background-image: url("../src/images/sky.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #202124;
+    cursor: url("../src/images/mouseIcon.png"), auto;
+}
+a {
+    cursor: pointer;
+}
+
+button {
+    cursor: url("../src/images/cursor.png"), auto;
+}
+.cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+}
+
+body::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    background: radial-gradient(
+        ellipse at center,
+        rgba(0,0,0,0) 45%,
+        rgba(0,0,0,0.45) 65%,
+        rgba(0,0,0,0.65) 100%
+    );
+
+    pointer-events: none;
+    z-index: -1;
+}
+.subTitle {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    translate: -50% -50%;
+    opacity: 0;
+    animation: fadeScale 1s ease forwards;
+    animation-delay: 0.4s;
+}
+
+.subTitle2 {
+    position: absolute;
+    top: 135%;
+    left: 50%;
+    translate: -50% -50%;
+    opacity: 0;
+    animation: fadeScale 1s ease forwards;
+    animation-delay: 0.4s;
+}
+
+.Title, .subTitle, .subTitle2,.WoodyImage {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeScale 1s ease forwards;
+}
+
+.Title {
+    animation-delay: 0s;
+}
+
+.subTitle {
+    animation-delay: 0.4s;
+}
+.subTitle2 {
+    animation-delay: 0.6s;
+}
+
+.WoodyImage {
+    animation-delay: 0.1s;
+}
+
+
+@keyframes fadeScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+.Title h1 {
+    display: inline-block;
+    font-family: "Peace Sans";
+    font-size: 45px;
+    text-align: center;
+    color: rgb(255, 225, 0);
+    -webkit-text-stroke: 1.5px #000000;
+       text-shadow: 2px 2px 5px black;
+}
+.Title {
+    text-align: center;
+}
+
+
+::-webkit-scrollbar {
+    width: 18px;
+    height: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: #0f0f0f;
+    background-size: cover;
+    background-position: center;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image:
+        radial-gradient(
+            ellipse,
+            rgba(0,0,0,0) 20%,
+            rgba(0,0,0,0.7) 100%
+        ),
+        url("../src/images/sky.png");
+
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 10px;
+    border: 2px solid black;
+}
