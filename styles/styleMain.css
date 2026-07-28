@@ -75,10 +75,6 @@ body::before {
     color: orange;
 }
 
-/* =========================
-   TITULO
-========================= */
-
 .Title {
     text-align: center;
     margin: 30px 15px;
@@ -95,10 +91,6 @@ body::before {
     text-shadow: 2px 2px 5px black;
 }
 
-/* =========================
-   IMAGEN
-========================= */
-
 .WoodyImage {
     display: flex;
     justify-content: center;
@@ -106,18 +98,51 @@ body::before {
 }
 
 .WoodyImage img {
-    width: min(250px, 80%);
+    width: min(650px, 80%);
+    height: auto;
+}
+.WoodyImage2 {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.WoodyImage2 img {
+    width: min(650px, 80%);
+    height: auto;
+}
+
+.cutceneWork {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.cutceneWork img {
+    width: min(750px, 80%);
     height: auto;
 }
 
 .subTitle,
-.subTitle2 {
+.subTitle2,
+.subTitle3,
+.subTitle4,
+.subTitle5,
+.subTitle6,
+.subTitle7,
+.subTitle8 {
     width: min(900px, 90%);
     margin: 60px auto;
 }
 
 .subTitle h2,
-.subTitle2 h2 {
+.subTitle2 h2,
+.subTitle3 h2,
+.subTitle4 h2,
+.subTitle5 h2,
+.subTitle6 h2,
+.subTitle7 h2,
+.subTitle8 h2 {
     text-align: center;
     color: white;
     text-shadow: 2px 2px 5px black;
@@ -127,7 +152,13 @@ body::before {
 }
 
 .subTitle h3,
-.subTitle2 h3 {
+.subTitle2 h3,
+.subTitle3 h3,
+.subTitle4 h3,
+.subTitle5 h3,
+.subTitle6 h3,
+.subTitle7 h3,
+.subTitle8 h3 {
     color: white;
     text-shadow: 2px 2px 5px black;
     font-family: "RokkittSemiBold-SemiBold";
@@ -137,7 +168,6 @@ body::before {
     text-align: left;
     margin: 10px 0;
 }
-
 
 .Title,
 .WoodyImage,
@@ -162,6 +192,13 @@ body::before {
 
 .subTitle2 {
     animation-delay: .55s;
+}
+
+.subTitle3 {
+    animation-delay: .75s;
+}
+.subTitle4 {
+    animation-delay: .85s;
 }
 
 @keyframes fadeScale {
@@ -250,4 +287,12 @@ button {
     .subTitle2 h3 {
         text-align: center;
     }
+}
+
+.Video video,
+.DamagedToyGameplay video {
+    display: block;
+    margin: 40px auto;
+    width: min(900px, 95%);
+    height: auto;
 }
