@@ -92,6 +92,19 @@ body {
     background-attachment: fixed;
     background-color: #202124;
     cursor: url("../src/images/mouseIcon.png"), auto;
+        background-repeat: repeat-x;
+    background-attachment: fixed;
+
+    animation: skyMove 20s linear infinite;
+}
+@keyframes skyMove {
+    from {
+        background-position: 0 center;
+    }
+
+    to {
+        background-position: 1000px center;
+    }
 }
 a {
     cursor: pointer;
