@@ -291,10 +291,13 @@ button {
 .videoEmbed {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin: 40px 0;
 }
 
 .videoEmbed iframe {
     width: 900px;
-    height: 506px;
+    max-width: 90%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    border: 4px solid black;
 }
