@@ -323,13 +323,11 @@ button {
 .secret-button {
     position: fixed;
     top: 0px;
-    right: 20px;
+    right: -50px;
     z-index: 9999;
 }
 
 .secret-button img {
     width: 250px;
     height: 250px;
-    display: block;
-    pointer-events: none;
 }
