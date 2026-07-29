@@ -131,8 +131,9 @@ body::before {
 }
 
 .WoodyImage2 img {
-    width: min(650px, 80%);
+    width: min(450px, 80%);
     height: auto;
+    margin: 20px;
 }
 
 .cutceneWork {
@@ -157,7 +158,8 @@ body::before {
 .subTitle9,
 .subTitle10,
 .subtitleVideo,
-.containerFinal{
+.containerFinal,
+.agradecimientos{
     width: min(900px, 90%);
     margin: 60px auto;
 }
@@ -195,7 +197,8 @@ body::before {
 .subTitle8 h2,
 .subTitle9 h2, 
 .subTitle10 h2,
-.containerFinal h2{
+.containerFinal h2,
+.agradecimientos h2{
     text-align: center;
     color: white;
     text-shadow: 2px 2px 5px black;
@@ -215,7 +218,7 @@ body::before {
 .subTitle9 h3,
 .subTitle10 h3,
 .subtitleVideo h3,
-.containerFinal h3 {
+.containerFinal h3{
     color: white;
     text-shadow: 2px 2px 5px black;
     font-family: "RokkittSemiBold-SemiBold";
@@ -225,7 +228,16 @@ body::before {
     text-align: left;
     margin: 10px 0;
 }
-
+.agradecimientos h3 {
+       color: white;
+    text-shadow: 2px 2px 5px black;
+    font-family: "RokkittSemiBold-SemiBold";
+    font-weight: normal;
+    font-size: clamp(18px, 2.3vw, 24px);
+    line-height: 1.6;
+    text-align: center;
+    margin: 10px 0;
+}
 .reveal {
     opacity: 0;
     transform: translateY(60px);
@@ -324,7 +336,7 @@ button {
 .secret-button {
     position: fixed;
     top: 55%;
-    left: 52%;
+    left: 68%;
     transform: translate(-50%, -50%);
     opacity: 0.01;
     z-index: 9999;
