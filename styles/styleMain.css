@@ -358,3 +358,46 @@ button {
 .secret-button:active {
     opacity: 1;
 }
+.ArtsComunity {
+    width: min(900px, 90%);
+    margin: 60px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ArtsComunity h2{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-family: "RokkittSemiBold-SemiBold";
+    font-size: clamp(30px, 5vw, 50px);
+    margin-bottom: 20px;
+}
+.ArtsComunity .images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.ArtsComunity .images img{
+    width: min(650px, 80%);
+    height: auto;
+    display: block;
+}
+
+.ArtsComunity .images h4{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.ArtsComunity h4{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-family: "RokkittSemiBold-SemiBold";
+    font-size: clamp(30px, 5vw, 50px);
+    margin-bottom: 20px;
+}
