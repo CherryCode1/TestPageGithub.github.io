@@ -112,6 +112,7 @@ body::before {
     height: auto;
 }
 
+
 .collabImage {
     display: flex;
     justify-content: center;
@@ -154,9 +155,20 @@ body::before {
 .subTitle7,
 .subTitle8,
 .subTitle9,
-.subTitle10{
+.subTitle10,
+.subtitleVideo{
     width: min(900px, 90%);
     margin: 60px auto;
+}
+.containerImages{
+    width: min(900px, 90%);
+    margin: 60px auto;
+    align-items: left;
+}
+.containerImages img {
+    width: min(350px, 80%);
+    height: auto;
+    margin: 45px;
 }
 .finalContainer{
     width: min(900px, 90%);
@@ -199,7 +211,8 @@ body::before {
 .subTitle7 h3,
 .subTitle8 h3,
 .subTitle9 h3,
-.subTitle10 h3 {
+.subTitle10 h3,
+.subtitleVideo h3 {
     color: white;
     text-shadow: 2px 2px 5px black;
     font-family: "RokkittSemiBold-SemiBold";
@@ -210,49 +223,16 @@ body::before {
     margin: 10px 0;
 }
 
-.Title,
-.WoodyImage,
-.subTitle,
-.subTitle2 {
+.reveal {
     opacity: 0;
-    transform: scale(.8);
-    animation: fadeScale 1s ease forwards;
+    transform: translateY(60px);
+    transition: opacity .8s ease, transform .8s ease;
 }
 
-.Title {
-    animation-delay: 0s;
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
 }
-
-.WoodyImage {
-    animation-delay: .15s;
-}
-
-.subTitle {
-    animation-delay: .35s;
-}
-
-.subTitle2 {
-    animation-delay: .55s;
-}
-
-.subTitle3 {
-    animation-delay: .75s;
-}
-.subTitle4 {
-    animation-delay: .85s;
-}
-
-@keyframes fadeScale {
-    from {
-        opacity: 0;
-        transform: scale(.8);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
 
 a {
     cursor: pointer;
