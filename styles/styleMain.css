@@ -323,8 +323,7 @@ button {
     top: 55%;
     left: 52%;
     transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity .3s;
+    opacity: 0.01;
     z-index: 9999;
 }
 
@@ -334,6 +333,7 @@ button {
     display: block;
 }
 
-.secret-button:hover {
+.secret-button:hover,
+.secret-button:active {
     opacity: 1;
 }
