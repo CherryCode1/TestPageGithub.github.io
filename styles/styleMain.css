@@ -136,6 +136,12 @@ body::before {
     margin: 20px;
 }
 
+.DirectorsImg {
+    width: min(550px, 80%);
+    display: block;
+    margin: 25px auto;
+}
+
 .cutceneWork {
     display: flex;
     justify-content: center;
@@ -336,7 +342,7 @@ button {
 .secret-button {
     position: fixed;
     top: 55%;
-    left: 68%;
+    left: 52%;
     transform: translate(-50%, -50%);
     opacity: 0.01;
     z-index: 9999;
