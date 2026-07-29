@@ -156,7 +156,8 @@ body::before {
 .subTitle8,
 .subTitle9,
 .subTitle10,
-.subtitleVideo{
+.subtitleVideo,
+.containerFinal{
     width: min(900px, 90%);
     margin: 60px auto;
 }
@@ -193,7 +194,8 @@ body::before {
 .subTitle7 h2,
 .subTitle8 h2,
 .subTitle9 h2, 
-.subTitle10 h2{
+.subTitle10 h2,
+.containerFinal h2{
     text-align: center;
     color: white;
     text-shadow: 2px 2px 5px black;
@@ -212,7 +214,8 @@ body::before {
 .subTitle8 h3,
 .subTitle9 h3,
 .subTitle10 h3,
-.subtitleVideo h3 {
+.subtitleVideo h3,
+.containerFinal h3 {
     color: white;
     text-shadow: 2px 2px 5px black;
     font-family: "RokkittSemiBold-SemiBold";
